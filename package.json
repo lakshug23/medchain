@@ -1,0 +1,64 @@
+{
+  "name": "medchain-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ethers": "^6.8.0",
+    "framer-motion": "^12.23.12",
+    "html5-qrcode": "^2.3.8",
+    "keccak256": "^1.0.6",
+    "lucide-react": "^0.535.0",
+    "merkletreejs": "^0.3.10",
+    "qrcode": "^1.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-qr-code": "^2.0.18",
+    "react-router-dom": "^6.4.0",
+    "react-scripts": "5.0.1",
+    "recharts": "^3.1.0",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.179.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "autoprefixer": "^10.4.12",
+    "hardhat": "^2.26.1",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.0"
+  },
+  "proxy": "http://localhost:8545"
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for MedChain */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out;
+}
+
+.btn-success {
+  @apply bg-success-600 hover:bg-success-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out;
+}
+
+.btn-warning {
+  @apply bg-warning-500 hover:bg-warning-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out;
+}
+
+.btn-danger {
+  @apply bg-danger-500 hover:bg-danger-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200 ease-in-out;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6 card-shadow;
+}
+
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-manufactured {
+  @apply status-badge bg-blue-100 text-blue-800;
+}
+
+.status-distributor {
+  @apply status-badge bg-yellow-100 text-yellow-800;
+}
+
+.status-hospital {
+  @apply status-badge bg-green-100 text-green-800;
+}
+
+.status-patient {
+  @apply status-badge bg-purple-100 text-purple-800;
+}
+
+.status-expired {
+  @apply status-badge bg-red-100 text-red-800;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Apply Poppins font to all elements */
+* {
+  font-family: 'Poppins', sans-serif;
+}
